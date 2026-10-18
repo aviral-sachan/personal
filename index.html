@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Gehna</title>
+    <!-- Premium Fonts Loaded -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SYSTEM GLOBAL BACKGROUND LAYERS (Linked with your requested roses wallpaper) -->
+    <div id="dynamic-main-bg" class="main-page-background" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6w5Uoi4ZWz19FEcu4lMW6Nwjeay11Yw0emzuw9MRQGw&s=10') !important;"></div>
+
+    <!-- 1. PREMIUM GLASSMORPHIC LOGIN CONTAINER (Linked with your requested balloons wallpaper) -->
+    <div id="login-screen" class="screen-layer active-layer login-bg-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBCh-pp5SypVNV_uAzsdftDBxBayPNKvtwGlZZXSmNw&s=10') !important;">
+        <div class="glass-login-card">
+            <h2 class="stylish-heading">Welcome Inside</h2>
+            <p class="login-subtitle">Enter credentials to unlock the surprise</p>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" autocomplete="off">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <button onclick="checkCredentials()" class="premium-btn">Unlock Experience</button>
+            <p id="error-msg" class="error-text"></p>
+        </div>
+    </div>
+
+    <!-- 2. STICKY TOP NAVIGATION BAR -->
+    <nav class="top-navbar" id="main-nav">
+        <div class="nav-left">Gehna</div>
+        <div class="nav-right">
+            <a href="https://instagram.com" target="_blank" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CORE VIEWPORT WRAPPER -->
+    <main class="main-container">
+        
+        <!-- 3. REALISTIC INTERACTIVE CLOSED ENVELOPE MODULE -->
+        <div id="envelope-section" class="section-wrapper hide-element dynamic-fade">
+            <div class="envelope-container" id="envelope" onclick="openEnvelope()">
+                <div class="envelope-back">
+                    <div class="envelope-front"></div>
+                    <div class="envelope-top-flap"></div>
+                </div>
+            </div>
+            <div class="envelope-instruction" id="env-instruction">Click on the envelope to open it</div>
+        </div>
+
+        <!-- 4. CENTER INTERACTION FLOATING TEXT LAYOUT -->
+        <div id="floating-card-section" class="section-wrapper hide-element dynamic-fade">
+            <div class="letter-paper-standalone">
+                <h3 class="letter-title">Happy Birthday Gehna!</h3>
+                <p class="letter-body font-premium-serif">Wishing you a year filled with sweet moments, endless smiles, and lots of joy. You are an amazing friend! May all your dreams come true.</p>
+                <div class="signature">From Your Dear Friend Aviral</div>
+                <button class="premium-btn" style="margin-top:20px;" onclick="goToHarryPotter()">Choose Your Gift</button>
+            </div>
+        </div>
+
+        <!-- 5. WISH DETECTOR CARD PANEL -->
+        <div id="potter-section" class="section-wrapper hide-element dynamic-fade">
+            <div class="interactive-card">
+                <h2 class="card-heading font-magic-cinzel">MUJHSE KYA GIFT CHAHIYE?</h2>
+                <p class="card-subtext">Type the exact gift request you want from Aviral</p>
+                <textarea id="gift-input" placeholder="Your wishlist goes here..."></textarea>
+                <br>
+                <button class="premium-btn" onclick="sendGiftRequest()">Send Wishlist</button>
+                <div id="heart-anim" class="heart-pulse-element">❤️</div>
+            </div>
+        </div>
+
+        <!-- 6. CONDITIONAL SELECTION PARTY COMPONENT -->
+        <div id="party-section" class="section-wrapper hide-element dynamic-fade">
+            <div class="interactive-card">
+                <h2 class="card-heading font-magic-cinzel">PARTY DOGI? 🥳🥂</h2>
+                <p class="card-subtext">Choose your response girl</p>
+                <div class="choice-action-row">
+                    <button class="choice-btn dynamic-yes" onclick="selectParty('yes')">YES! 😍</button>
+                </div>
+                
+                <div id="dish-input-area" class="hide-element dynamic-fade" style="margin-top: 20px; width: 100%;">
+                    <p class="input-hint-label" style="font-weight:600; margin-bottom:10px; color:#ff527b;">Enter at least one dish name you will serve:</p>
+                    <input type="text" id="dish-input" placeholder="Type dish name here...">
+                    <br>
+                    <button class="premium-btn" onclick="submitDish()">Submit & Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. FALLING DYNAMIC MASSIVE PINK GIFT BOX CONTAINER -->
+        <div id="final-section" class="section-wrapper hide-element dynamic-fade">
+            <div id="falling-gift-mystery-box" class="falling-box-element" onclick="unpackMagicalGift()">
+                <div class="box-ribbon-pink">🎁</div>
+                <p class="box-tap-hint">Tap to open surprise</p>
+            </div>
+            
+            <div id="final-surprise-box" class="interactive-card hide-element dynamic-fade">
+                <h1 class="ultimate-bold-text font-magic-cinzel">
+                    MUJHSE ACCHA GIFT TUJHE KYA CHAHIYE PAGLI ! 🤪❤️
+                </h1>
+                <p class="ultimate-subtext font-premium-serif">May your day be spectacular and bright.</p>
+                <button class="premium-btn" style="margin-top: 20px;" onclick="triggerEnd()">End</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FIXED BOTTOM LEFT CORNER DESIGNER BADGE BOX -->
+    <div id="designer-signature-badge" class="corner-designer-badge hide-element">
+        <span class="badge-prefix">DESIGNED BY</span>
+        <span class="badge-name">AVIRAL</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
